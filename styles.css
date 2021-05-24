@@ -59,6 +59,12 @@ body {
   padding: 0.5rem 3.75rem;
   border: 0;
   border-radius: 30px;
+  filter: drop-shadow(0px 5px 10px #56428d);
+}
+.container .intro-section .content-container button:active,
+.container .intro-section .content-container button:hover {
+  background-color: var(--softMagenta);
+  color: white;
 }
 .container .social-media-container {
   display: flex;
@@ -73,6 +79,11 @@ body {
   font-size: 1rem;
   color: white;
 }
+.container .social-media-container .fab:active,
+.container .social-media-container .fab:hover {
+  border: 2px solid var(--softMagenta);
+  color: var(--softMagenta);
+}
 .container .social-media-container .fa-facebook-f {
   padding: 0.5rem 0.75rem;
 }
@@ -80,6 +91,11 @@ body {
 h1,
 button {
   font-family: var(--poppins);
+}
+
+.fab,
+button {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
