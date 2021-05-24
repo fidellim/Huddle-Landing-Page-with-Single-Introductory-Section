@@ -1,5 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+	// font-style
+	--openSans: "Open Sans", sans-serif;
+	--poppins: "Poppins", sans-serif;
+
+	// colors
+	--violet: hsl(257, 40%, 49%);
+	--softMagenta: hsl(300, 69%, 71%);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	background: url("./images/bg-mobile.svg");
+	background-color: var(--violet);
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: contain;
+	text-align: center;
+}
+
+.container {
+	margin: 2.25em;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	.logo {
+		width: 8rem;
+	}
+
+	.intro-section {
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+
+		.content-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1.25rem;
+			h1 {
+				font-size: 1.25rem;
+			}
+			p {
+				font-size: 14px;
+				font-family: var(--openSans);
+				line-height: 1.75;
+			}
+			h1,
+			p {
+				color: #f7eefb;
+			}
+			button {
+				background-color: white;
+				color: #65519e;
+				padding: 0.5rem 3.75rem;
+				border: 0;
+				border-radius: 30px;
+			}
+		}
+	}
+	.social-media-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 0.75rem;
+		.fab {
+			border: 2px solid white;
+			padding: 0.5rem;
+			border-radius: 50%;
+			font-size: 1rem;
+			color: white;
+		}
+		.fa-facebook-f {
+			padding: 0.5rem 0.75rem;
+		}
+	}
+}
+
+h1,
+button {
+	font-family: var(--poppins);
 }

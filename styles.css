@@ -1,7 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --openSans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg-mobile.svg");
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  text-align: center;
+}
+
+.container {
+  margin: 2.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.container .logo {
+  width: 8rem;
+}
+.container .intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.container .intro-section .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.container .intro-section .content-container h1 {
+  font-size: 1.25rem;
+}
+.container .intro-section .content-container p {
+  font-size: 14px;
+  font-family: var(--openSans);
+  line-height: 1.75;
+}
+.container .intro-section .content-container h1,
+.container .intro-section .content-container p {
+  color: #f7eefb;
+}
+.container .intro-section .content-container button {
+  background-color: white;
+  color: #65519e;
+  padding: 0.5rem 3.75rem;
+  border: 0;
+  border-radius: 30px;
+}
+.container .social-media-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.container .social-media-container .fab {
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: white;
+}
+.container .social-media-container .fa-facebook-f {
+  padding: 0.5rem 0.75rem;
+}
+
+h1,
+button {
+  font-family: var(--poppins);
 }
 
 /*# sourceMappingURL=styles.css.map */
