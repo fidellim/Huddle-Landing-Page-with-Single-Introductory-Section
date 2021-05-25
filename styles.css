@@ -98,4 +98,62 @@ button {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  body {
+    background: url("./images/bg-desktop.svg");
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+
+  .container {
+    margin: 3rem 5rem 2rem 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0rem;
+    height: 100vh;
+  }
+  .container .logo {
+    width: 12rem;
+    padding-bottom: 4rem;
+    align-self: flex-start;
+  }
+  .container .intro-section {
+    flex-direction: row;
+    justify-self: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .container .intro-section img {
+    display: block;
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
+  .container .intro-section .content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 50%;
+  }
+  .container .intro-section .content-container h1 {
+    font-size: 3rem;
+    max-width: 550px;
+  }
+  .container .intro-section .content-container p {
+    font-size: 18px;
+    max-width: 520px;
+  }
+  .container .social-media-container {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .container .intro-section {
+    gap: 4rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
